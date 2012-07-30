@@ -1,7 +1,9 @@
 Hitchhiker's Guide to Python
 ============================
 
-**Python Best Practices Guidebook**
+.. **Python Best Practices Guidebook**
+
+**Pythonのベストプラクティスガイドブック**
 
 -----------
 
@@ -10,7 +12,9 @@ Hitchhiker's Guide to Python
 This guide is currently under heavy development. This opinionated guide exists to provide both novice and expert Python developers a best-practice handbook to the installation, configuration, and usage of Python on a daily basis.
 
 
-Topics include:
+.. Topics include:
+
+以下のトピックがあります。 :
 
 - Platform/version specific installations
 - Py2app, Py2exe, bbfreeze, pyInstaller

@@ -19,7 +19,9 @@ Once your changes get merged back in, you'll automatically be added to the
 スタイルガイド
 ----------------------
 
-For all contributions, please follow the :ref:`guide-style-guide`.
+.. For all contributions, please follow the :ref:`guide-style-guide`.
+
+全てのこのプロジェクトに対する貢献に対して、以下の :ref:`guide-style-guide` を参照して下さい。
 
 .. _todo-list-ref:
 
@@ -32,7 +34,7 @@ For all contributions, please follow the :ref:`guide-style-guide`.
 .. If you'd like to contribute, there's plenty to do. Here's a short todo_ list.
 
 貢献する場合は、やることがたくさんあります。
-以下に簡単なやることリストがあります。
+以下に簡単な やることリスト_ があります。
 
     .. include:: ../../TODO.rst
 

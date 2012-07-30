@@ -1,7 +1,9 @@
 Getting Started
 ---------------
 
-This part of the guide focuses on setting up your Python environment.
+.. This part of the guide focuses on setting up your Python environment.
+
+ガイドのこの章は、Python環境のセットアップをフォーカスしています。
 
 .. toctree::
    :maxdepth: 2
@@ -19,8 +21,11 @@ This part of the guide focuses on setting up your Python environment.
 
 
 
-Writing Great Code
-------------------
+.. Writing Great Code
+   ------------------
+
+すばらしいコードを書く
+------------------------------------
 
 This part of the guide focuses on best practices for writing Python code.
 

@@ -1,8 +1,9 @@
 Picking an Interpreter
 ======================
 
-Which Python to use?
+.. Which Python to use?
 
+どっちのPythonを使いますか?
 
 2.x vs 3.x
 ~~~~~~~~~~

@@ -3,16 +3,28 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-The Hitchhiker's Guide to Python!
-=================================
+.. The Hitchhiker's Guide to Python!
+   =================================
 
-Welcome to The Hitchhiker's Guide to Python. `DON'T PANIC! <http://www.amazon.com/gp/product/B0043M4ZH0/ref=as_li_ss_tl?ie=UTF8&tag=bookforkind-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0043M4ZH0>`_
+Pythonヒッチハイク・ガイド
+====================================
 
-**This guide is currently under heavy development, and is mostly a skeleton at
-the moment.**  If you'd like to help, `fork us on GitHub <https://github.com/kennethreitz/python-guide>`_!
+.. Welcome to The Hitchhiker's Guide to Python. `DON'T PANIC! <http://www.amazon.com/gp/product/B0043M4ZH0/ref=as_li_ss_tl?ie=UTF8&tag=bookforkind-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0043M4ZH0>`_
 
-This *opinionated* guide exists to provide both novice and expert Python
-developers a best-practice handbook to the installation, configuration, and
-usage of Python on a daily basis.
+Pythonヒッチハイク・ガイドにようこそ。
+`慌てないで! <http://www.amazon.com/gp/product/B0043M4ZH0/ref=as_li_ss_tl?ie=UTF8&tag=bookforkind-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0043M4ZH0>`_
+
+.. **This guide is currently under heavy development, and is mostly a skeleton at
+   the moment.**  If you'd like to help, `fork us on GitHub <https://github.com/kennethreitz/python-guide>`_!
+
+**このガイドは現在鋭意作成中のため、多くの部分が未記載の状態です。**
+もし手伝ってくれるなら、 `GitHubでフォークして下さい <https://github.com/kennethreitz/python-guide>`_ !
+
+.. This *opinionated* guide exists to provide both novice and expert Python
+   developers a best-practice handbook to the installation, configuration, and
+   usage of Python on a daily basis.
+
+この *独断的な* ガイドは、初心者と上級者の両方のPython開発者向けのベストプラクティスを集めたハンドブックで、
+Pythonのインストール、設定、日々の利用方法についてのガイドを提供します。
 
 .. include:: contents.rst.inc

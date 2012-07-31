@@ -1,12 +1,22 @@
-Choosing a License
-==================
+.. Choosing a License
+   ==================
 
-Open source.
+ライセンスの選択
+=====================
 
-There are plenty of `open source licenses <http://opensource.org/licenses/alphabetical>`_
-available to choose from.
+.. Open source.
 
-In general, these licenses tend to fall into one of two categories:
+オープンソース。
+
+.. There are plenty of `open source licenses <http://opensource.org/licenses/alphabetical>`_
+   available to choose from.
+
+たくさんの `オープンソースライセンス <http://opensource.org/licenses/alphabetical>`_ があって、
+その中から選ぶことができます。
+
+.. In general, these licenses tend to fall into one of two categories:
+
+一般的に、これらのライセンスは二つのカテゴリのうちのどちらかになる傾向があります。 :
 
 1. licenses that focus more on the user's freedom to do with the
    software as they please (these are the more-permissive open
@@ -21,12 +31,18 @@ The latter are less-permissive in the sense that they don't permit
 someone to add code to the software and distribute it without also
 including the source code for their changes.
 
-To help you choose one for your project, there's a `license chooser <http://three.org/openart/license_chooser/>`_,
-use it.
+.. To help you choose one for your project, there's a `license chooser <http://three.org/openart/license_chooser/>`_,
+   use it.
+
+プロジェクトでどれかを選ぶ時のサポートとして、
+`license chooser <http://three.org/openart/license_chooser/>`_ というものがあるので使ってみて下さい。
 
 
-More-Permissive
-:::::::::::::::
+.. More-Permissive
+   :::::::::::::::
+
+かなり大雑把な分類
+::::::::::::::::::::::::::::::
 
 PSFL
 ----

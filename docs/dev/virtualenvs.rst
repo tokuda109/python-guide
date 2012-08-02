@@ -1,5 +1,8 @@
-Virtual Environments
-====================
+.. Virtual Environments
+   ====================
+
+仮想環境
+=======================
 
 A Virtual Environment, put simply, is an isolated working copy of Python which
 allows you to work on a specific project without worry of affecting other
@@ -14,14 +17,19 @@ virtualenv
 `virtualenv <http://pypi.python.org/pypi/virtualenv>`_ is a tool to create
 isolated Python environments.
 
-Install it via pip:
+.. Install it via pip:
+
+pipでインストールする :
 
 .. code-block:: console
 
   $ pip install virtualenv
 
-Basic Usage
-~~~~~~~~~~~
+.. Basic Usage
+   ~~~~~~~~~~~
+
+基本的な使い方
+~~~~~~~~~~~~~~~~~~~~~~
 
 1. Create a virtual environment:
 
@@ -85,8 +93,11 @@ To install (make sure **virtualenv** is already installed):
   PS> mkdir $env:WORKON_HOME
   PS> import-module virtualenvwrapper
 
-Basic Usage
-~~~~~~~~~~~
+.. Basic Usage
+   ~~~~~~~~~~~
+
+基本的な使い方
+~~~~~~~~~~~~~~~~~~~~~~
 
 1. Create a virtual environment:
 
@@ -120,8 +131,11 @@ can quickly switch between environments.
 
    $ rmvirtualenv venv
 
-Other useful commands
-~~~~~~~~~~~~~~~~~~~~~
+.. Other useful commands
+   ~~~~~~~~~~~~~~~~~~~~~
+
+他の便利なコマンド
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``lsvirtualenv``
   List all of the environments.

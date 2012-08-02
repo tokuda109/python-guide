@@ -1,9 +1,14 @@
-Your Development Environment
-============================
+.. Your Development Environment
+   ============================
 
+あなたの開発環境
+===============================
 
-Text Editors
-::::::::::::
+.. Text Editors
+   ::::::::::::
+
+テキストエディタ
+::::::::::::::::::
 
 Just about anything which can edit plain text will work for writing Python code,
 however, using a more powerful editor may make your life a bit easier.
@@ -82,15 +87,24 @@ scripters and novice users alike."
 Sublime Text
 ------------
 
-"`Sublime Text <http://www.sublimetext.com/>`_ is a sophisticated text editor
-for code, html and prose. You'll love the slick user interface and
-extraordinary features."
+.. "`Sublime Text <http://www.sublimetext.com/>`_ is a sophisticated text editor
+   for code, html and prose. You'll love the slick user interface and
+   extraordinary features."
 
-Sublime Text has excellent support for editing Python code and uses Python for
-its plugin API.
+「`Sublime Text <http://www.sublimetext.com/>`_ は、
+コードやHTMLや何らかの文章を書くための洗練されたテキストエディタです。
+あなたは滑らかなユーザーインターフェイスや豊富な機能の方が好きだと思います。」
 
-`Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_
-is currently in beta.
+.. Sublime Text has excellent support for editing Python code and uses Python for
+   its plugin API.
+
+Sublime TextにはPythonコードの書くための素晴らしい機能があり、
+Sublime Text自体のプラグインのAPIにもPythonが使われています。
+
+.. `Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_
+   is currently in beta.
+
+`Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_ は現在ベータバージョンです。
 
 IDEs
 ::::
@@ -106,8 +120,10 @@ features can be brought to IntelliJ with the free `Python Plug-In <http://plugin
 Eclipse
 -------
 
-The most popular Eclipse plugin for Python development is Aptana's
-`PyDev <http://pydev.org>`_.
+.. The most popular Eclipse plugin for Python development is Aptana's
+   `PyDev <http://pydev.org>`_.
+
+Pythonを開発するための一番一般的なEclipseプラグインは、Aptanaの `PyDev <http://pydev.org>`_ です。
 
 
 Komodo IDE

@@ -10,19 +10,27 @@
 テキストエディタ
 ::::::::::::::::::
 
-Just about anything which can edit plain text will work for writing Python code,
-however, using a more powerful editor may make your life a bit easier.
+.. Just about anything which can edit plain text will work for writing Python code,
+   however, using a more powerful editor may make your life a bit easier.
 
+Pythonのコードを書くためにはプレーンテキストを編集することができるものであれば何でも構いません。
+しかし、さらに強力なエディタを使うことでもっと楽になるかもしれません。
 
 VIM
 ---
 
-Vim is a text editor which uses keyboard shortcuts for editing instead of menus
-or icons. There exist a couple of plugins and settings for the VIM editor to
-aid python development. If you only develop in Python, a good start is to set
-the default settings for indentation and line-wrapping to values compliant with
-`PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_. In your home directory,
-open a file called `.vimrc` and add the following lines: ::
+.. Vim is a text editor which uses keyboard shortcuts for editing instead of menus
+   or icons. There exist a couple of plugins and settings for the VIM editor to
+   aid python development. If you only develop in Python, a good start is to set
+   the default settings for indentation and line-wrapping to values compliant with
+   `PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_. In your home directory,
+   open a file called `.vimrc` and add the following lines: ::
+
+Vimは、メニューやアイコンの代わりにキーボードショートカットを使うテキストエディタです。
+Pythonの開発用のVimエディタのプラグインや設定がいくつもあります。
+Pythonでしか開発しないなら、インデントと行の折り返しのデフォルトの設定を
+`PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_ の値にするといいと思います。
+ホームディレクトリで `.vimrc` というファイルを開いて、以下の行を追加して下さい。 ::
 
     set textwidth=79
     set shiftwidth=4
@@ -31,10 +39,13 @@ open a file called `.vimrc` and add the following lines: ::
     set softtabstop=4
     set shiftround
 
-With these settings, newlines are inserted after 79 characters and indentation
-is set to 4 spaces per tab. If you also use VIM for other languages, there is a
-handy plugin at indent_, which handles indentation settings for python source
-files.
+.. With these settings, newlines are inserted after 79 characters and indentation
+   is set to 4 spaces per tab. If you also use VIM for other languages, there is a
+   handy plugin at indent_, which handles indentation settings for python source
+   files.
+
+これらの設定で79文字で新しい行が挿入され、タブを4つの空白でインデントします。
+Vimを他の言語でも使う場合は、インデントを手動で
 
 There is also a handy syntax plugin at syntax_ featuring some improvements over
 the syntax file included in VIM 6.1.
@@ -45,12 +56,17 @@ errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
 If your VIM is compiled with `+python` you can also utilize some very handy
 plugins to do these checks from within the editor.
 
-For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
-install vim-pyflakes_. Now you can map the functions `Pep8()` or `Pyflakes()`
-to any hotkey or action you want in Vim. Both plugins will display errors at
-the bottom of the screen, and provide an easy way to jump to the corresponding
-line. It's very handy to call these functions whenever you save a file. In
-order to do this, add the following lines to your `vimrc`::
+.. For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
+   install vim-pyflakes_. Now you can map the functions `Pep8()` or `Pyflakes()`
+   to any hotkey or action you want in Vim. Both plugins will display errors at
+   the bottom of the screen, and provide an easy way to jump to the corresponding
+   line. It's very handy to call these functions whenever you save a file. In
+   order to do this, add the following lines to your `vimrc`::
+
+PEP8のチェックには、 vim-pep8_ プラグインをインストールして下さい。
+Pyflakesには、 vim-pyflakes_ をインストールすることができます。
+そのようにすると、 `Pep8()` や `Pyflakes()` 関数を任意のホットキーに割り当てたり、Vimでしたいことができるようになります。
+スクリーンの下部でエラー表示されたり、
 
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
@@ -101,11 +117,6 @@ Sublime Text
 Sublime TextにはPythonコードの書くための素晴らしい機能があり、
 Sublime Text自体のプラグインのAPIにもPythonが使われています。
 
-.. `Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_
-   is currently in beta.
-
-`Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_ は現在ベータバージョンです。
-
 IDEs
 ::::
 
@@ -115,6 +126,10 @@ PyCharm / IntelliJ IDEA
 `PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also
 known for IntelliJ IDEA. Both share the same code base and most of PyCharm's
 features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_.
+
+`PyCharm <http://www.jetbrains.com/pycharm/>`_ は、
+IntelliJ IDEAとしても知られているJetBrainsによって開発されています。
+同じコードを共有していて、
 
 
 Eclipse
@@ -128,9 +143,12 @@ Pythonを開発するための一番一般的なEclipseプラグインは、Apta
 
 Komodo IDE
 -----------
-`Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by
-ActiveState and is a commercial IDE for Windows, Mac
-and Linux.
+.. `Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by
+   ActiveState and is a commercial IDE for Windows, Mac
+   and Linux.
+
+`Komodo IDE <http://www.activestate.com/komodo-ide>`_ は、
+ActiveStateによって開発されていて、Windows、Mac、Linux向けの商用のIDEです。
 
 
 Spyder
@@ -274,8 +292,11 @@ It provides following features:
 IPython
 -------
 
-`IPython <http://ipython.org/>`_ provides a rich toolkit to help you make the
-most out of using Python interactively. Its main components are:
+.. `IPython <http://ipython.org/>`_ provides a rich toolkit to help you make the
+   most out of using Python interactively. Its main components are:
+
+`IPython <http://ipython.org/>`_ は、Pythonをよりインタラクティブに使うためのリッチなツールキットです。
+主要なコンポーネントは以下の通りです。 :
 
 * Powerful Python shells (terminal- and Qt-based).
 * A web-based notebook with the same core features but support for rich media,

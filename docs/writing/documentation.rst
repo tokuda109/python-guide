@@ -1,5 +1,8 @@
-Documenting Your Code
-=====================
+.. Documenting Your Code
+   =====================
+
+コードのドキュメント
+========================
 
 With readability of the code being a main focus for Python developers, proper
 commenting is naturally important. Some best practice apply to code comments
@@ -30,8 +33,11 @@ of the code.
 A CHANGELOG file or section in README should compile a short overview of the
 changes in the code base for the latest versions.
 
-Documentation
--------------
+.. Documentation
+   -------------
+
+ドキュメント
+--------------------
 
 As the project or library reaches a certain level of complexity, it may require
 a fuller documentation, which can be of different flavors:
@@ -49,8 +55,11 @@ values, with an explanation of their use.
 Some documents intended for developers might give guidance about code
 convention and general design decision of the project.
 
-Comments
---------
+.. Comments
+   --------
+
+コメント
+----------------
 
 Comments are written directly inside the code, either using the hash sign (#)
 or a docstring_.
@@ -232,10 +241,10 @@ Other Tools
 
 Epydoc
 ------
-`Epydoc <http://epydoc.sourceforge.net/>`_ generates API documentation based on docstrings. 
-Epydoc is able to parse docstrings marked up with :ref:`reStructuredText-ref`, 
-`Javadoc <http://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html#javadocdocuments>`_, 
-`epytext <http://epydoc.sourceforge.net/manual-epytext.html>`_ or plaintext. 
+`Epydoc <http://epydoc.sourceforge.net/>`_ generates API documentation based on docstrings.
+Epydoc is able to parse docstrings marked up with :ref:`reStructuredText-ref`,
+`Javadoc <http://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html#javadocdocuments>`_,
+`epytext <http://epydoc.sourceforge.net/manual-epytext.html>`_ or plaintext.
 It supports various output formats, most notable HTML, PDF or LaTeX documents.
 
 The development of Epydoc is discontinued. You should use :ref:`sphinx-ref` instead.

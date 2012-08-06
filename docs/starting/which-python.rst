@@ -1,5 +1,8 @@
-Picking an Interpreter
-======================
+.. Picking an Interpreter
+   ======================
+
+インタプリタを選ぶ
+=========================
 
 .. Which Python to use?
 

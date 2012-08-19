@@ -1,5 +1,8 @@
-Code Style
-==========
+.. Code Style
+   ==========
+
+コードスタイル
+====================
 
 If you ask Python programmers what they like most in Python, they will
 often say its high readability.  Indeed, a high level of readability

@@ -1,13 +1,20 @@
-Testing Your Code
-=====================
+.. Testing Your Code
+   =====================
 
-Testing your code is very important.
+コードのテスト
+========================
+
+.. Testing your code is very important.
+
+コードをテストすることはとても大事です。
 
 Getting used to writing the testing code and the running code in parallel is
 now considered a good habit. Used wisely, this method helps you define more
 precisely your code's intent and have a more decoupled architecture.
 
-Some general rules of testing:
+.. Some general rules of testing:
+
+テストには一般的なルールがいくつかあります。 :
 
 - A testing unit should focus on one tiny bit of functionality and prove it
   correct.
@@ -190,8 +197,9 @@ unittest module!
 Nose
 ----
 
-nose extends unittest to make testing easier.
+.. nose extends unittest to make testing easier.
 
+Noseはテストをより簡単にするためにUnittestを拡張します。
 
 ::
 
@@ -207,15 +215,19 @@ xUnit-compatible test output, coverage reporting, and test selection.
 tox
 ---
 
-tox is a tool for automating test environment management and testing against
-multiple interpreter configurations
+.. tox is a tool for automating test environment management and testing against
+   multiple interpreter configurations
+
+toxは、自動テスト環境の管理や複数のインタープリターに対してテストの設定をするためのツールです。
 
 ::
 
     $ pip install tox
 
-tox allows you to configure complicated multi-parameter test matrices via a
-simple ini-style configuration file.
+.. tox allows you to configure complicated multi-parameter test matrices via a
+   simple ini-style configuration file.
+
+toxは、複雑な設定することができます。
 
     `tox <http://tox.testrun.org/latest/>`_
 

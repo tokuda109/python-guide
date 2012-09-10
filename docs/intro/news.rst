@@ -6,6 +6,8 @@ Planet Python
 
 This is an aggregate of Python news from a growing number of developers.
 
+Pythonのニュースの
+
     `Planet Python <http://planet.python.org>`_
 
 /r/python
@@ -19,7 +21,10 @@ Python-related news.
 Python Weekly
 ~~~~~~~~~~~~~
 
-Python Weekly is a free weekly newsletter featuring curated news, articles,
-new releases, jobs, etc. related to Python.
+.. Python Weekly is a free weekly newsletter featuring curated news, articles,
+   new releases, jobs, etc. related to Python.
+
+Python Weeklyは、Pythonに関するニュース、記事、新しいリリース情報、
+求人情報等がキュレーションされて配信されている無料の週間ニュースレターです。
 
     `Python Weekly <http://www.pythonweekly.com/>`_

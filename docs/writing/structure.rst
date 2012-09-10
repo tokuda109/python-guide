@@ -1,12 +1,20 @@
-Structuring Your Project
-========================
+.. Structuring Your Project
+   ========================
 
-By "structure" we mean the decisions you make concerning
-how your project best meets its objective. We need to consider how to
-best leverage Python's features to create clean, effective code.
-In practical terms, "structure" means making clean code whose logic and
-dependencies are clear as well as how the files and folders are organized
-in the filesystem.
+プロジェクトの設計
+===========================
+
+.. By "structure" we mean the decisions you make concerning
+   how your project best meets its objective. We need to consider how to
+   best leverage Python's features to create clean, effective code.
+   In practical terms, "structure" means making clean code whose logic and
+   dependencies are clear as well as how the files and folders are organized
+   in the filesystem.
+
+"設計"によって、プロジェクトが最も目的を達成しやすいやり方
+"構造"によって、私たちはあなたのプロジェクトが最もその目的を満たす方法に関する意思決定に意味します。
+我々は、クリーンで効果的なコードを作成する最善の方法を活用するPythonの機能に考慮する必要があります。
+具体的には、"構造"とは、ロジックとの依存関係のファイルやフォルダがシステムでどのように構成されるかなど明確なだけでなく、あるクリーンなコードを作ることを意味します。
 
 Which functions should go into which modules? How does data flow through
 the project? What features and functions can be grouped together and
@@ -71,8 +79,11 @@ include:
   task at hand, you might be swimming in ravioli code.
 
 
-Modules
--------
+.. Modules
+   -------
+
+モジュール
+--------------
 
 Python modules are one of the main abstraction layers available and probably the
 most natural one. Abstraction layers allow separating code into parts holding
@@ -170,8 +181,11 @@ able to tell immediately where a class or function comes from, as in the
 all but the simplest single file projects.
 
 
-Packages
---------
+.. Packages
+   --------
+
+パッケージ
+----------------
 
 Python provides a very straightforward packaging system, which is simply an
 extension of the module mechanism to a directory.
@@ -200,8 +214,11 @@ Lastly, a convenient syntax is available for importing deeply nested packages:
 `import very.deep.module as mod`. This allows you to use `mod` in place of the verbose
 repetition of `very.deep.module`.
 
-Object-oriented programming
----------------------------
+.. Object-oriented programming
+   ---------------------------
+
+オブジェクト指向のプログラミング
+------------------------------------------------------
 
 Python is sometimes described as an object-oriented programming language. This
 can be somewhat misleading and needs to be clarified.
@@ -277,8 +294,11 @@ things that are manipulated (windows, buttons, avatars, vehicles) have a
 relatively long life of their own in the computer's memory.
 
 
-Decorators
-----------
+.. Decorators
+   ----------
+
+デコレーター
+--------------------
 
 The Python language provides a simple yet powerful syntax called 'decorators'.
 A decorator is a function or a class that wraps (or decorate) a function
@@ -311,8 +331,11 @@ expensive function in a table and use them directly instead of recomputing
 them when they have already been computed. This is clearly not part
 of the function logic.
 
-Dynamic typing
---------------
+.. Dynamic typing
+   --------------
+
+動的型付け
+-----------------
 
 Python is said to be dynamically typed, which means that variables
 do not have a fixed type. In fact, in Python, variables are very
@@ -376,10 +399,15 @@ and it would be against its philosophy anyway. However, it may be a good
 discipline to avoid assigning to a variable more than once, and it helps
 in grasping the concept of mutable and immutable types.
 
-Mutable and immutable types
----------------------------
+.. Mutable and immutable types
+   ---------------------------
 
-Python has two kinds of built-in or user-defined types.
+ミュータブルとイミュータブル
+----------------------------------------
+
+.. Python has two kinds of built-in or user-defined types.
+
+Pythonは二つの組み込みやユーザー定義の型があります。
 
 Mutable types are those that allow in-place modification
 of the content. Typical mutables are lists and dictionaries:

@@ -1,19 +1,32 @@
 .. _install-osx:
 
-Installing Python on Mac OS X
-=============================
+Mac OS XにPythonをインストール
+==========================================================
 
-The latest version of Mac OS X, Lion, **comes with Python 2.7 out of the box**.
+.. Installing Python on Mac OS X
+   =============================
 
-You do not need to install or configure anything else to use Python. Having
-said that, I would strongly recommend that you install the tools and libraries
-described in the next section before you start building Python applications
-for real-world use. In particular, you should always install Distribute, as it
-makes it much easier for you to use other third-party Python libraries.
+.. The latest version of Mac OS X, Lion, **comes with Python 2.7 out of the box**.
 
-The version of Python that ships with OS X is great for learning, but it's not
-good for development. It's slightly out of date, and Apple has made significant
-changes that can cause hidden bugs.
+Mac OS Xの最新バージョンのLionには、**Python 2.7が最初から入っているので、すぐに使えます**。
+
+.. You do not need to install or configure anything else to use Python. Having
+   said that, I would strongly recommend that you install the tools and libraries
+   described in the next section before you start building Python applications
+   for real-world use. In particular, you should always install Distribute, as it
+   makes it much easier for you to use other third-party Python libraries.
+
+Pythonを使うのにインストールや何かを設定する必要はありません。
+そうは言っても、ツールやライブラリをインストールすることを強くお勧めしています。
+実際にPythonのアプリケーションを作成し始めるまえに
+特に、他のサードパーティのPythonライブラリを使うのがとても簡単になるので、
+Distributeをいつもインストールしておいて下さい。
+
+.. The version of Python that ships with OS X is great for learning, but it's not
+   good for development. It's slightly out of date, and Apple has made significant
+   changes that can cause hidden bugs.
+
+Pythonのバージョン
 
 Doing it Right
 --------------

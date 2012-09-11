@@ -409,15 +409,24 @@ in grasping the concept of mutable and immutable types.
 
 Pythonは二つの組み込みやユーザー定義の型があります。
 
-Mutable types are those that allow in-place modification
-of the content. Typical mutables are lists and dictionaries:
-All lists have mutating methods, like append() or pop(), and
-can be modified in place. The same goes for dictionaries.
+.. Mutable types are those that allow in-place modification
+   of the content. Typical mutables are lists and dictionaries:
+   All lists have mutating methods, like append() or pop(), and
+   can be modified in place. The same goes for dictionaries.
 
-Immutable types provide no method for changing their content.
-For instance, the variable x set to the integer 6 has no "increment" method. If you
-want to compute x + 1, you have to create another integer and give it
-a name.
+ミュータブル型は既にある内容を修正することができます。
+型がミュータブルなものとしてリストや辞書があります。
+リストはappend()やpop()のような内容を変更するメソッドを持っていて、既にあるものを修正することができます。
+辞書についても同様です。
+
+.. Immutable types provide no method for changing their content.
+   For instance, the variable x set to the integer 6 has no "increment" method. If you
+   want to compute x + 1, you have to create another integer and give it
+   a name.
+
+イミュータブル型は内容を変更するためのメソッドを持っていません。
+例として、変数xには数字の6が入っていて、インクリメントするメソッドがありません。
+x + 1としたいなら他の変数名に数字を入れて作成しなければいけません。
 
 .. code-block:: python
 
@@ -428,17 +437,25 @@ a name.
     x = 6
     x = x + 1  # The new x is another object
 
-One consequence of this difference in behavior is that mutable
-types are not "stable", and therefore cannot be used as dictionary
-keys.
+.. One consequence of this difference in behavior is that mutable
+   types are not "stable", and therefore cannot be used as dictionary
+   keys.
 
-Using properly mutable types for things that are mutable in nature
-and immutable types for things that are fixed in nature
-helps to clarify the intent of the code.
+この動作の違いの一つとしてミュータブル型は静的ではなく、したがって、辞書のキーとして使うことができません。
 
-For example, the immutable equivalent of a list is the tuple, created
-with ``(1, 2)``. This tuple is a pair that cannot be changed in-place,
-and can be used as a key for a dictionary.
+.. Using properly mutable types for things that are mutable in nature
+   and immutable types for things that are fixed in nature
+   helps to clarify the intent of the code.
+
+固定されているイミュータブル型や変更可能なミュータブル型を適切に使うことで、
+コードの意図を明確にしやすくなります。
+
+.. For example, the immutable equivalent of a list is the tuple, created
+   with ``(1, 2)``. This tuple is a pair that cannot be changed in-place,
+   and can be used as a key for a dictionary.
+
+例として、リストと同じような機能を持ったイミュータブル型としてタプルがあり、(1, 2)としてすることができます。
+このタプルは内容を変更することができないペアなので、辞書のキーとして使うことができます。
 
 One peculiarity of Python that can surprise beginners is that
 strings are immutable. This means that when constructing a string from
@@ -490,8 +507,11 @@ should be your preferred method.
     foo += 'ooo'  # This is bad, instead you should do:
     foo = ''.join([foo, 'ooo'])
 
-Vendorizing Dependencies
-------------------------
+.. Vendorizing Dependencies
+   ------------------------
+
+ベンダー依存
+---------------------------
 
 
 
@@ -499,5 +519,8 @@ Runners
 -------
 
 
-Further Reading
----------------
+.. Further Reading
+   ---------------
+
+参考文献
+------------------

@@ -4,6 +4,7 @@
 あなたの開発環境
 ===============================
 
+
 .. Text Editors
    ::::::::::::
 
@@ -15,6 +16,7 @@
 
 Pythonのコードを書くためにはプレーンテキストを編集することができるものであれば何でも構いません。
 しかし、さらに強力なエディタを使うことでもっと楽になるかもしれません。
+
 
 VIM
 ---
@@ -39,13 +41,10 @@ Pythonでしか開発しないなら、インデントと行の折り返しの�
     set softtabstop=4
     set shiftround
 
-.. With these settings, newlines are inserted after 79 characters and indentation
-   is set to 4 spaces per tab. If you also use VIM for other languages, there is a
-   handy plugin at indent_, which handles indentation settings for python source
-   files.
-
-これらの設定で79文字で新しい行が挿入され、タブを4つの空白でインデントします。
-Vimを他の言語でも使う場合は、インデントを手動で
+With these settings, newlines are inserted after 79 characters and indentation
+is set to 4 spaces per tab. If you also use VIM for other languages, there is a
+handy plugin at indent_, which handles indentation settings for python source
+files.
 
 There is also a handy syntax plugin at syntax_ featuring some improvements over
 the syntax file included in VIM 6.1.
@@ -56,17 +55,12 @@ errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
 If your VIM is compiled with `+python` you can also utilize some very handy
 plugins to do these checks from within the editor.
 
-.. For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
-   install vim-pyflakes_. Now you can map the functions `Pep8()` or `Pyflakes()`
-   to any hotkey or action you want in Vim. Both plugins will display errors at
-   the bottom of the screen, and provide an easy way to jump to the corresponding
-   line. It's very handy to call these functions whenever you save a file. In
-   order to do this, add the following lines to your `vimrc`::
-
-PEP8のチェックには、 vim-pep8_ プラグインをインストールして下さい。
-Pyflakesには、 vim-pyflakes_ をインストールすることができます。
-そのようにすると、 `Pep8()` や `Pyflakes()` 関数を任意のホットキーに割り当てたり、Vimでしたいことができるようになります。
-スクリーンの下部でエラー表示されたり、
+For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
+install vim-pyflakes_. Now you can map the functions `Pep8()` or `Pyflakes()`
+to any hotkey or action you want in Vim. Both plugins will display errors at
+the bottom of the screen, and provide an easy way to jump to the corresponding
+line. It's very handy to call these functions whenever you save a file. In
+order to do this, add the following lines to your `vimrc`::
 
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
@@ -81,6 +75,24 @@ to do that which also shows status and warning messages in the statusbar would b
     let g:syntastic_auto_loc_list=1
     let g:syntastic_loc_list_height=5
 
+Python-mode
+^^^^^^^^^^^
+
+Python-mode_ is complex solution in VIM for work with python code.
+It has:
+
+- Async python code checking (pylint, pyflakes, pep8, mccabe) in any combination;
+- Code refactoring and autocompletion with Rope;
+- Fastest python folding;
+- Nice and powered python syntax;
+- Virtual env support;
+- Search by python documentation and run python code;
+- More other things like auto pep8 error fixes;
+- Very customizable an documented as well;
+- Have all required libraries in self;
+
+And more stuff.
+
 
 .. _indent: http://www.vim.org/scripts/script.php?script_id=974
 .. _syntax: http://www.vim.org/scripts/script.php?script_id=790
@@ -89,8 +101,24 @@ to do that which also shows status and warning messages in the statusbar would b
 .. _PEP8: http://pypi.python.org/pypi/pep8/
 .. _vim-pep8: https://github.com/nvie/vim-pep8
 .. _syntastic: https://github.com/scrooloose/syntastic
+.. _Python-mode: https://github.com/klen/python-mode
 
 .. todo:: add supertab notes
+
+Emacs
+-----
+
+Emacs is a powerful text editor. It's fully programmable (lisp), but
+it can be some work to wire up correctly. A good start if you're
+already an Emacs user is `Python Programming in Emacs`_ at EmacsWiki.
+
+1. Emacs itself comes with a python mode.
+2. Python ships with an alternate version:
+   `python-mode.el <https://launchpad.net/python-mode>`_
+3. Fabián Ezequiel Gallina's provides nice functionality and
+   behavior out of the box: `python.el <https://github.com/fgallina/python.el>`_
+
+.. _Python Programming in Emacs: http://emacswiki.org/emacs/PythonProgrammingInEmacs
 
 TextMate
 --------
@@ -126,10 +154,6 @@ PyCharm / IntelliJ IDEA
 `PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also
 known for IntelliJ IDEA. Both share the same code base and most of PyCharm's
 features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_.
-
-`PyCharm <http://www.jetbrains.com/pycharm/>`_ は、
-IntelliJ IDEAとしても知られているJetBrainsによって開発されています。
-同じコードを共有していて、
 
 
 Eclipse
@@ -220,7 +244,7 @@ environment, just remove the directory it was installed into. (In this
 case, it would be ``rm -rf venv``).
 
 Other Notes
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 Running ``virtualenv`` with the option ``--no-site-packages`` will not
 include the packages that are installed globally. This can be useful
@@ -329,4 +353,3 @@ Python interpreter for Unix-like operating systems. It has the following feature
 ::
 
     $ pip install bpython
-

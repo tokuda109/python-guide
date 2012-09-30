@@ -1,40 +1,69 @@
-================
-Web Applications
-================
+.. ================
+   Web Applications
+   ================
 
-As a powerful scripting language adapted to both fast prototyping
-and bigger projects, Python is widely used in Web applications
-development.
+================================
+ウェブアプリケーション
+================================
 
-Context
-:::::::
+.. As a powerful scripting language adapted to both fast prototyping
+   and bigger projects, Python is widely used in Web applications
+   development.
+
+強力なスクリプト言語は早くプロトタイプを作成することと大きなプロジェクトの両方に対応していて、
+Pythonはウェブアプリケーションの開発で広く使われています。
+
+.. Context
+   :::::::
+
+コンテキスト
+::::::::::::::
 
 
 WSGI
 ----
 
-The Web Server Gateway Interface (or "WSGI" for short) is a standard
-interface between web servers and Python web application frameworks. By
-standardizing behavior and communication between web servers and Python web
-frameworks, WSGI makes it possible to write portable Python web code that
-can be deployed in any :ref:`WSGI-compliant web server <wsgi-servers-ref>`.
-WSGI is documented in `PEP-3333 <http://www.python.org/dev/peps/pep-3333/>`_.
+.. The Web Server Gateway Interface (or "WSGI" for short) is a standard
+   interface between web servers and Python web application frameworks. By
+   standardizing behavior and communication between web servers and Python web
+   frameworks, WSGI makes it possible to write portable Python web code that
+   can be deployed in any :ref:`WSGI-compliant web server <wsgi-servers-ref>`.
+   WSGI is documented in `PEP-3333 <http://www.python.org/dev/peps/pep-3333/>`_.
+
+Web Server Gateway Interface(省略して”WSGI”)は、
+ウェブサーバーとPythonウェブアプリケーションフレームワーク間の標準的なインターフェースです。
+ウェブサーバーとPythonウェブフレームワークとの間の振る舞いややり取りを共通化することで、
+持ち運び可能なPythonのコードを書くことが可能になり、
+:ref:`WSGIに対応した任意のウェブサーバー <wsgi-servers-ref>` にデプロイすることができます。
+`PEP-3333 <http://www.python.org/dev/peps/pep-3333/>`_ でドキュメント化されています。
 
 
-Frameworks
-::::::::::
+.. Frameworks
+   ::::::::::
 
-Broadly speaking, a web framework consist of a set of libraries and a main
-handler within which you can build custom code to implement a web application
-(i.e. an interactive web site). Most web frameworks include patterns and
-utilities to accomplish at least the following:
+フレームワーク
+::::::::::::::::::::
 
-URL Routing
-  Matches an incoming HTTP request to a particular piece of Python code to
-  be invoked
+.. Broadly speaking, a web framework consist of a set of libraries and a main
+   handler within which you can build custom code to implement a web application
+   (i.e. an interactive web site). Most web frameworks include patterns and
+   utilities to accomplish at least the following:
 
-Request and Response Objects
-  Encapsulate the information received from or sent to a user's browser
+大まかに言うと、ウェブフレームワークはウェブアプリケーションを実装するための処理を独自のコードを書くためのライブラリから成ります。
+ほとんどのウェブフレームワークはパターンがあって、少なくとも以下のことができるようなツールがあります。 :
+
+.. URL Routing
+     Matches an incoming HTTP request to a particular piece of Python code to
+     be invoked
+
+URLルーティング
+  HTTPリクエストされたものと呼び出されるべきPythonの特定のコードとのマッチングを行う。
+
+.. Request and Response Objects
+     Encapsulate the information received from or sent to a user's browser
+
+リクエストとレスポンスオブジェクト
+  ユーザーのブラウザから送られてきた情報を受け取ってカプセル化する。
 
 Template Engine
   Allows for separating Python code implementing an application's logic from

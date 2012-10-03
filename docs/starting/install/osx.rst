@@ -8,7 +8,7 @@ Mac OS XにPythonをインストール
 
 .. The latest version of Mac OS X, Lion, **comes with Python 2.7 out of the box**.
 
-Mac OS Xの最新バージョンのLionには、**Python 2.7が最初から入っているので、すぐに使えます**。
+Mac OS Xの最新バージョンのLionには、**Python 2.7が最初から入っているので、すぐに使うことができます**。
 
 .. You do not need to install or configure anything else to use Python. Having
    said that, I would strongly recommend that you install the tools and libraries
@@ -16,61 +16,90 @@ Mac OS Xの最新バージョンのLionには、**Python 2.7が最初から入�
    for real-world use. In particular, you should always install Distribute, as it
    makes it much easier for you to use other third-party Python libraries.
 
-Pythonを使うのにインストールや何かを設定する必要はありません。
-そうは言っても、ツールやライブラリをインストールすることを強くお勧めしています。
-実際にPythonのアプリケーションを作成し始めるまえに
+Pythonを使うためにインストールや何かを設定するといったことは必要ありません。
+そうは言っても、実際にPythonアプリケーションを作り始める前に次の章で紹介するツールやライブラリをインストールすることを強くお勧めしています。
 特に、他のサードパーティのPythonライブラリを使うのがとても簡単になるので、
-Distributeをいつもインストールしておいて下さい。
+Distributeをインストールしておいて下さい。
 
 .. The version of Python that ships with OS X is great for learning, but it's not
    good for development. It's slightly out of date, and Apple has made significant
    changes that can cause hidden bugs.
 
-Pythonのバージョン
+OS Xに最初から入っているPythonのバージョンは学習するにはいいですが、開発するにはよくありません。
+少し古くて、Appleによって修正されているので分からないバグがあるかもしれません。
 
-Doing it Right
---------------
 
-Let's install a real version of Python.
+.. Doing it Right
+   --------------
 
-First, you'll need to have GCC installed to compile Python. You can either get
-this from `XCode <http://developer.apple.com/xcode/>`_ or the smaller
-`OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_ package.
+正しい方法でやりましょう
+---------------------------------------
 
-While Lion comes with a large number of UNIX utilities, those familiar with
-Linux systems will notice one key component missing: a decent package manager.
-`Homebrew <http://mxcl.github.com/homebrew/>`_ fills this void.
+.. Let's install a real version of Python.
 
-To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_,
-simply run
+Pythonの正しいバージョンをインストールしましょう。
+
+.. First, you'll need to have GCC installed to compile Python. You can either get
+   this from `XCode <http://developer.apple.com/xcode/>`_ or the smaller
+   `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_ package.
+
+最初にPythonをコンパイルするためにインストールされているGCCが必要です。
+`XCode <http://developer.apple.com/xcode/>`_ や、より小さな
+`OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_ というパッケージからインストールすることができます。
+
+.. While Lion comes with a large number of UNIX utilities, those familiar with
+   Linux systems will notice one key component missing: a decent package manager.
+   `Homebrew <http://mxcl.github.com/homebrew/>`_ fills this void.
+
+Lionには数多くのUNIXユーティリティが入っているので、
+Linuxのシステムと同じようにあるコンポーネントがないということをパッケージ管理ソフトが認識します。
+`Homebrew <http://mxcl.github.com/homebrew/>`_ がこの穴を埋めます。
+
+.. To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_,
+   simply run
+
+`Homebrewをインストールする <https://github.com/mxcl/homebrew/wiki/installation>`_ ことは簡単です。
 
 .. code-block:: console
 
     $ /usr/bin/ruby -e "$(/usr/bin/curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 
-Then, insert the Homebrew directory at the top of your ``PATH`` environment
-variable. You can do this by adding the following line at the bottom of your
-``~/.bashrc`` file
+.. Then, insert the Homebrew directory at the top of your ``PATH`` environment
+   variable. You can do this by adding the following line at the bottom of your
+   ``~/.bashrc`` file
+
+それから、 ``PATH`` という環境変数の一番上にHomebrewのディレクトリを追加して下さい。
+``~/.bashrc`` ファイルの下に以下の行を追加するだけです。
 
 .. code-block:: console
 
     export PATH=/usr/local/bin:$PATH
 
-Now, we can install Python 2.7: ::
+.. Now, we can install Python 2.7: ::
+
+そして、Python 2.7がインストールできました。 ::
 
     $ brew install python --framework
 
-This will take a minute or two. Once that's complete, you'll have to add the
-new Python scripts directory to your ``PATH``
+.. This will take a minute or two. Once that's complete, you'll have to add the
+   new Python scripts directory to your ``PATH``
+
+これは、1～2分かかります。
+終了したら新しいPythonのスクリプトのディレクトリを ``PATH`` に追加して下さい。
 
 .. code-block:: console
 
     export PATH=/usr/local/share/python:$PATH
 
-The ``--framework`` option tells Homebrew to compile a Framework-style Python
-build, rather than a UNIX-style build. The outdated version of Python that
-Snow Leopard comes packaged with is built as a Framework, so this helps avoid
-some future module installation bugs.
+.. The ``--framework`` option tells Homebrew to compile a Framework-style Python
+   build, rather than a UNIX-style build. The outdated version of Python that
+   Snow Leopard comes packaged with is built as a Framework, so this helps avoid
+   some future module installation bugs.
+
+``--framework`` オプションはUNIXスタイルではなく、
+フレームワークスタイルでPythonをコンパイルするようにHomebrewに教えます。
+Snow Leopardにフレームワークとしてビルドされて入っているPythonはバージョンが古くなっているので、
+いくつかのfutureモジュールのインストールの際のバグを避けるようにしています。
 
 
 Distribute & Pip
@@ -83,12 +112,19 @@ download and install any compliant Python software product with a single
 command. It also enables you to add this network installation capability to
 your own Python software with very little work.
 
-Homebrew already installed Distribute for you. Its ``easy_install`` command is
-considered by many to be deprecated, so we will install its replacement:
-**pip**. Pip allows for uninstallation of packages, and is actively maintained,
-unlike easy_install.
+.. Homebrew already installed Distribute for you. Its ``easy_install`` command is
+   considered by many to be deprecated, so we will install its replacement:
+   **pip**. Pip allows for uninstallation of packages, and is actively maintained,
+   unlike easy_install.
 
-To install pip, simply open a command prompt and run
+HomebrewにはすでにDistributeがインストールされています。
+``easy_install`` コマンドは、廃止されるとほとんどの人が考えていて、
+代わりに **pip** というのをインストールしています。
+Pipはパッケージのアンインストールができ、easy_installとは異なり、活発にメンテナンスされています。
+
+.. To install pip, simply open a command prompt and run
+
+Pipをインストールするには、コマンドプロンプトを開いて以下を実行するだけです。
 
 .. code-block:: console
 
@@ -98,8 +134,12 @@ To install pip, simply open a command prompt and run
 Virtualenv
 ----------
 
-After Distribute & Pip, the next development tool that you should install is
-`virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
+.. After Distribute & Pip, the next development tool that you should install is
+   `virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
+
+DistributeとPipを入れた後、次にインストールしたほうがいい開発ツールは、
+`virtualenv <http://pypi.python.org/pypi/virtualenv/>`_ です。
+Pipを使ってインストールします。
 
 .. code-block:: console
 
@@ -134,5 +174,8 @@ copy your code out of it, and then delete the main directory for the environment
 
 --------------------------------
 
-This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
-which is available under the same license.
+.. This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
+   which is available under the same license.
+
+このページは、 `別のガイドライン <http://www.stuartellis.eu/articles/python-development-windows/>`_ を書きなおしたもので、
+同じライセンスのもとで公開しています。

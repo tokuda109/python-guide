@@ -162,8 +162,11 @@ The WSGI servers serve the Python applications while the web server handles
 tasks better suited for it such as static file serving, request routing, DDoS
 protection, and basic authentication.
 
-Hosting
-:::::::
+.. Hosting
+   :::::::
+
+ホスティング
+:::::::::::::::::::::
 
 Platform-as-a-Service
 ---------------------
@@ -204,36 +207,51 @@ application for use in Heroku, and maintains a list of `example applications
 DotCloud
 ~~~~~~~~
 
-`DotCloud <http://www.dotcloud.com/>`_ supports WSGI applications and
-background/worker tasks natively on their platform. Web applications running
-Python version 2.6, and uses :ref:`nginx <nginx-ref>` and :ref:`uWSGI
-<uwsgi-ref>`, and allows custom configuration of both
-for advanced users.
+.. `DotCloud <http://www.dotcloud.com/>`_ supports WSGI applications and
+   background/worker tasks natively on their platform. Web applications running
+   Python version 2.6, and uses :ref:`nginx <nginx-ref>` and :ref:`uWSGI
+   <uwsgi-ref>`, and allows custom configuration of both
+   for advanced users.
 
-DotCloud uses a custom command-line API client which can work with
-applications managed in git repositories or any other version control
-system.
+`DotCloud <http://www.dotcloud.com/>`_ は、WSGIアプリケーションとプラットフォーム上でバックグランドとワーカーのタスクを最初からサポートしています。
+ウェブアプリケーションはPython 2.6、 :ref:`nginx <nginx-ref>` 、 :ref:`uWSGI <uwsgi-ref>` で実行され、設定を変更することができます。
 
-DotCloud has a free plan with limited database size, and without extra
-services (caching…).
+.. DotCloud uses a custom command-line API client which can work with
+   applications managed in git repositories or any other version control
+   system.
 
-See the `DotCloud documentation on Python
-<http://docs.dotcloud.com/services/python/>`_ for more information and help
-getting started.
+DotCloudは、gitレポジトリや他の任意のバージョン管理システムで管理されているアプリケーションを作業するための独自のコマンドラインAPIを使うことができます。
+
+.. DotCloud has a free plan with limited database size, and without extra
+   services (caching…).
+
+DotCloudはデータベース容量の制限や他のサービス(キャッシュ等)がない無料プランがあります。
+
+.. See the `DotCloud documentation on Python
+   <http://docs.dotcloud.com/services/python/>`_ for more information and help
+   getting started.
+
+使うためのヘルプやより詳しい情報を見る場合は、
+`DotCloudのPythonドキュメント <http://docs.dotcloud.com/services/python/>`_ で確認して下さい。
 
 
 Gondor
 ~~~~~~
 
-`Gondor <https://gondor.io/>`_ is a PaaS specailized for deploying Django
-and Pinax applications. Gondor supports Django versions 1.2 and 1.3 on
-Python version 2.7, and can automatically configure your Django site if you
-use ``local_settings.py`` for site-specific configuration information.
+.. `Gondor <https://gondor.io/>`_ is a PaaS specailized for deploying Django
+   and Pinax applications. Gondor supports Django versions 1.2 and 1.3 on
+   Python version 2.7, and can automatically configure your Django site if you
+   use ``local_settings.py`` for site-specific configuration information.
 
-Gondor publishes guides to deploying `Django projects
-<https://gondor.io/support/setting-up-django/>`_ and `Pinax projects
-<https://gondor.io/support/setting-up-pinax/>`_ on their platform.
+`Gondor <https://gondor.io/>`_ はDjangoやPinaxのアプリケーションをデプロイするのに特化したPaaSです。
+Gondorは、Pythonのバージョン2.7でDjangoのバージョン1.2と1.3をサポートしています。そして、
+サイトの仕様が定義されている ``local_settings.py`` を使ってDjangoのサイトを自動で設定することができます。
 
+.. Gondor publishes guides to deploying `Django projects
+   <https://gondor.io/support/setting-up-django/>`_ and `Pinax projects
+   <https://gondor.io/support/setting-up-pinax/>`_ on their platform.
+
+Gondorは、Gondorプラットフォームに `Djangoプロジェクト <https://gondor.io/support/setting-up-django/>`_ と `Pinaxプロジェクト <https://gondor.io/support/setting-up-pinax/>`_ をデプロイするためのガイドを公開しています。
 
 Templating
 ::::::::::

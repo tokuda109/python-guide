@@ -1,33 +1,56 @@
 .. _install-windows:
 
-Installing Python on Windows
-============================
+WindowsにPythonをインストールする
+=====================================================
 
-First, download the `latest version <http://python.org/ftp/python/2.7.2/python-2.7.2.msi>`_
-of Python 2 from the official Website. If you want to be sure you are installing a fully
-up-to-date version then use the "Windows Installer" link from the home page of the
-`Python.org web site <http://python.org>`_ .
+.. Installing Python on Windows
+   ============================
 
- The Windows version is provided as an MSI package. To install it manually, just
- double-click the file. The MSI package format allows Windows administrators to
- automate installation with their standard tools.
+.. First, download the `latest version <http://python.org/ftp/python/2.7.2/python-2.7.2.msi>`_
+   of Python 2 from the official Website. If you want to be sure you are installing a fully
+   up-to-date version then use the "Windows Installer" link from the home page of the
+   `Python.org web site <http://python.org>`_ .
 
-By design, Python installs to a directory with the version number embedded,
-e.g. Python version 2.7 will install at ``C:\Python27\``, so that you can
-have multiple versions of Python on the
-same system without conflicts. Of course, only one interpreter can be the
-default application for Python file types. It also does not automatically
-modify the ``PATH`` environment variable, so that you always have control over
-which copy of Python is run.
+最初に、公式サイトからPython 2 `最新バージョン <http://python.org/ftp/python/2.7.2/python-2.7.2.msi>`_
+をダウンロードして下さい。
+`Python.org web site <http://python.org>`_ のページの "Windows Installer" というリンクから最新版をインストールできるか確認して下さい。
 
-Typing the full path name for a Python interpreter each time quickly gets
-tedious, so add the directories for your default Python version to the PATH.
-Assuming that your Python installation is in ``C:\Python27\``, add this to your
-PATH::
+
+.. The Windows version is provided as an MSI package. To install it manually, just
+   double-click the file. The MSI package format allows Windows administrators to
+   automate installation with their standard tools.
+
+ Windows版はMSIパッケージとしても提供されています。
+ 手動でインストールするにはファイルをダブルクリックするだけです。
+ MSIパッケージ形式は、Windowsの管理者が標準的なツールを使用してインストールを自動化することができます。
+
+.. By design, Python installs to a directory with the version number embedded,
+   e.g. Python version 2.7 will install at ``C:\Python27\``, so that you can
+   have multiple versions of Python on the
+   same system without conflicts. Of course, only one interpreter can be the
+   default application for Python file types. It also does not automatically
+   modify the ``PATH`` environment variable, so that you always have control over
+   which copy of Python is run.
+
+Pythonは、バージョン2.7の場合は ``C:\Python27\`` のようにバージョン付きでディレクトリにインストールされます。
+同じシステム上でコンフリクトしないようにPythonの複数バージョン
+もちろん、一つのインタープリターでPythonのファイルでデフォルトアプリケーション
+``PATH`` 環境変数は自動で設定されないので、Pythonを
+
+.. Typing the full path name for a Python interpreter each time quickly gets
+   tedious, so add the directories for your default Python version to the PATH.
+   Assuming that your Python installation is in ``C:\Python27\``, add this to your
+   PATH::
+
+Pythonのインタープリターのフルパスを入力
+デフォルトのPythonバージョンをPATH
+毎回迅速に退屈な取得Pythonインタプリタのフルパス名入力するので、PATHにあなたのデフォルトバージョンのPython用のディレクトリを追加します。
 
     C:\Python27\;C:\Python27\Scripts\
 
-You can do this easily by running the following in ``powershell``::
+.. You can do this easily by running the following in ``powershell``::
+
+``powershell`` で以下を実行するだけです。 ::
 
     [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
 
@@ -38,6 +61,8 @@ said that, I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications for
 real-world use. In particular, you should always install Distribute, as it
 makes it much easier for you to use other third-party Python libraries.
+
+
 
 Distribute + Pip
 ----------------
@@ -58,7 +83,9 @@ considered by many to be deprecated, so we will install its replacement:
 **pip**. Pip allows for uninstallation of packages, and is actively maintained,
 unlike easy_install.
 
-To install pip, simply open a command prompt and run
+.. To install pip, simply open a command prompt and run
+
+Pipをインストールするには、コマンドプロンプトを開いて以下を実行するだけです。
 
 .. code-block:: console
 
@@ -68,8 +95,12 @@ To install pip, simply open a command prompt and run
 Virtualenv
 ----------
 
-After Distribute & Pip, the next development tool that you should install is
-`virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
+.. After Distribute & Pip, the next development tool that you should install is
+   `virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
+
+DistributeとPipを入れた後、次にインストールしたほうがいい開発ツールは、
+`virtualenv <http://pypi.python.org/pypi/virtualenv/>`_ です。
+Pipを使ってインストールします。
 
 .. code-block:: console
 
@@ -108,5 +139,8 @@ main directory for the environment.
 
 --------------------------------
 
-This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
-which is available under the same license.
+.. This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
+   which is available under the same license.
+
+このページは、 `別のガイドライン <http://www.stuartellis.eu/articles/python-development-windows/>`_ を書きなおしたもので、
+同じライセンスのもとで公開しています。

@@ -1,6 +1,6 @@
 .. _install-osx:
 
-Mac OS XにPythonをインストール
+Mac OS XにPythonをインストールする
 ==========================================================
 
 .. Installing Python on Mac OS X

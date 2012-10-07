@@ -1,7 +1,10 @@
 .. _install-linux:
 
-Installing Python on Linux
-==========================
+LinuxにPythonをインストールする
+=====================================================
+
+.. Installing Python on Linux
+   ==========================
 
 The latest versions of Ubuntu and Fedora **come with Python 2.7 out of the box**.
 
@@ -84,6 +87,8 @@ copy your code out of it, and then delete the main directory for the environment
 
 --------------------------------
 
-This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
-which is available under the same license.
+.. This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
+   which is available under the same license.
 
+このページは、 `別のガイドライン <http://www.stuartellis.eu/articles/python-development-windows/>`_ を書きなおしたもので、
+同じライセンスのもとで公開しています。

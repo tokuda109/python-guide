@@ -1,26 +1,42 @@
-Documentation
-=============
+.. Documentation
+   =============
 
-Readability is a primary focus for Python developers, in both project
-and code documentation. Following some simple best practices can save
-both you and others a lot of time.
+ドキュメント
+==========================
 
-Project Documentation
----------------------
+.. Readability is a primary focus for Python developers, in both project
+   and code documentation. Following some simple best practices can save
+   both you and others a lot of time.
 
-A ``README`` file at the root directory should give general
-information to the users and the maintainers. It should be raw text or
-written in some very easy to read markup, such as
-:ref:`reStructuredText-ref` and Markdown. It should contain a few
-lines explaining the purpose of the project or the library (without
-assuming the user knows anything about the project), the url of the
-main source for the software, and some basic credit information. This
-file is the main entry point for readers of the code.
+プロジェクトとコードのドキュメントのどちらにおいても、Pythonの開発者にとって読みやすさは最も大事なことです。
+以下に紹介するいくつかのシンプルなプラクティスはあなたや他の人の多くの時間を節約することに役立つでしょう。
+
+.. Project Documentation
+   ---------------------
+
+プロジェクトのドキュメント
+------------------------------------------
+
+.. A ``README`` file at the root directory should give general
+   information to the users and the maintainers. It should be raw text or
+   written in some very easy to read markup, such as
+   :ref:`reStructuredText-ref` and Markdown. It should contain a few
+   lines explaining the purpose of the project or the library (without
+   assuming the user knows anything about the project), the url of the
+   main source for the software, and some basic credit information. This
+   file is the main entry point for readers of the code.
+
+ルートディレクトリにある ``README`` ファイルは、一般的な情報を使う人やメンテナーに伝えるものです。
+生のテキストか :ref:`reStructuredText-ref` や Markdown のような読みやすいマークアップで書かれている文章にして下さい。
+プロジェクトやライブラリの目的を説明する部分(他にもプロジェクトで使う人に教えていたほうがいい情報)や、ソフトウェアのソースがあるURLや、基本的なクレジット情報が数行ずつあります。
+このファイルはコードの読者にとってエントリーポイントになります。
 
 An ``INSTALL`` file is less necessary with python.  The installation
 instructions are often reduced to one command, such as ``pip install
 module`` or ``python setup.py install`` and added to the ``README``
 file.
+
+.. ``INSTALL`` ファイルはPythonでは必要ありません。
 
 A ``LICENSE`` file should *always* be present and specify the license under which the
 software is made available to the public.
@@ -142,25 +158,34 @@ operation of the function or class: ::
 .. _PEP 0257: http://www.python.org/dev/peps/pep-0257/
 
 
-Other Tools
------------
+.. Other Tools
+   -----------
+
+他のツール
+----------------------
 
 You might see these in the wild. Use :ref:`sphinx-ref`.
 
 Pycco_
-    Pycco is a "literate-programming-style documentation generator"
-    and is a port of the node.js Docco_. It makes code into a
-    side-by-side HTML code and documentation.
+    .. Pycco is a "literate-programming-style documentation generator"
+       and is a port of the node.js Docco_. It makes code into a
+       side-by-side HTML code and documentation.
+
+    Pyccoは読み書き可能なプログラミングスタイルのドキュメントのジェネレーターで、node.jsのDoccoの一部です。コードをHTMLのコードやドキュメントにします。
 
 .. _Pycco: http://fitzgen.github.com/pycco
 .. _Docco: http://jashkenas.github.com/docco
 
 Ronn_
-    Ronn builds unix manuals. It converts human readable textfiles to roff for terminal display, and also to HTML for the web.
+    .. Ronn builds unix manuals. It converts human readable textfiles to roff for terminal display, and also to HTML for the web.
+
+    Ronnはunixのマニュアルを生成します。人間が読みやすいテキストファイルをターミナルで表示するよううに変換します。ウェブ用にHTMLにも変換します。
 
 .. _Ronn: https://github.com/rtomayko/ronn
 
 Epydoc_
-    Epydoc is discontinued. Use :ref:`sphinx-ref` instead.
+    .. Epydoc is discontinued. Use :ref:`sphinx-ref` instead.
+
+    Epydocは廃止されました。代わりに :ref:`sphinx-ref` を使って下さい。
 
 .. _Epydoc: http://epydoc.sourceforge.net

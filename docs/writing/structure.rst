@@ -1,7 +1,7 @@
 .. Structuring Your Project
    ========================
 
-プロジェクトの設計
+プロジェクトの構造
 ===========================
 
 .. By "structure" we mean the decisions you make concerning
@@ -11,24 +11,35 @@
    dependencies are clear as well as how the files and folders are organized
    in the filesystem.
 
-"設計"によって、プロジェクトが最も目的を達成しやすいやり方
+"構造"によって、プロジェクトが目的を達成しやすいベストな方法を決定する
+
+具体的には、"構造"とは、ファイルやフォルダがファイルシステムで階層化されているのと同じような方法でロジックや依存関係の明確にすることで、コードも明確になります。
+
 "構造"によって、私たちはあなたのプロジェクトが最もその目的を満たす方法に関する意思決定に意味します。
 我々は、クリーンで効果的なコードを作成する最善の方法を活用するPythonの機能に考慮する必要があります。
 具体的には、"構造"とは、ロジックとの依存関係のファイルやフォルダがシステムでどのように構成されるかなど明確なだけでなく、あるクリーンなコードを作ることを意味します。
 
-Which functions should go into which modules? How does data flow through
-the project? What features and functions can be grouped together and
-isolated? By answering questions like these you can begin to plan, in
-a broad sense, what your finished product will look like.
+.. Which functions should go into which modules? How does data flow through
+   the project? What features and functions can be grouped together and
+   isolated? By answering questions like these you can begin to plan, in
+   a broad sense, what your finished product will look like.
+
+関数をどのモジュールに置けばいいでしょう?
+
 
 In this section we take a closer look at Python's module and import
 systems as they are the central element to enforcing structure in your
 project. We then discuss various perspectives on how to build code which
 can be extended and tested reliably.
 
+この章では、
 
-Structure is Key
-----------------
+
+.. Structure is Key
+   ----------------
+
+構造は重要です
+--------------------------------
 
 Thanks to the way imports and modules are handled in Python, it is
 relatively easy to structure a Python project. Easy, here, means
@@ -189,6 +200,8 @@ all but the simplest single file projects.
 
 Python provides a very straightforward packaging system, which is simply an
 extension of the module mechanism to a directory.
+
+.. Pythonはとてもシンプルなパッケージシステムを提供していて、モジュールのメカニズムの拡張子
 
 Any directory with an __init__.py file is considered a Python package. The
 different modules in the package are imported in a similar manner as plain

@@ -1,5 +1,8 @@
-Hitchhiker's Guide to Python
-============================
+.. Hitchhiker's Guide to Python
+   ============================
+
+Pythonヒッチハイク・ガイド
+===============================
 
 .. **Python Best Practices Guidebook**
 
@@ -27,6 +30,6 @@ This guide is currently under heavy development. This opinionated guide exists t
 - How to interface w/ hg from git easily
 - what libraries to use for what
 
-If you are not fond of reading reStructuredText, there is a
+If you are not fond of reading reStructuredText, there is an
 almost up-to-date `HTML version at docs.python-guide.org
 <http://docs.python-guide.org>`_.

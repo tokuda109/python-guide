@@ -4,6 +4,8 @@
 インタプリタを選ぶ
 =========================
 
+.. _which-python:
+
 .. Which Python to use?
 
 どっちのPythonを使いますか?
@@ -83,7 +85,7 @@ PythonのパッケージとC拡張モジュールとの互換性を最大限持�
 
 .. If you are writing open-source Python code and want to reach the widest possible
    audience, targeting CPython is your best bet. If you need to use any packages
-   that are rely on C extensions for their functionality (eg: numpy) then CPython
+   that rely on C extensions for their functionality (eg: numpy) then CPython
    is your only choice.
 
 オープンソースやたくさんの人に使ってもらいと思っているPythonコードを書いているなら、

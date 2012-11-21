@@ -110,17 +110,17 @@ passed another value.
 
 Calling a function with keyword arguments can be done in multiple ways in Python,
 for example it is possible to follow the order of arguments in the definition without
-explicitly naming the arguments, like in ``send('Hello', 'World', 'Cthulhu', 'God')``,
+explicitly naming the arguments, like in ``send('Hello', 'World', 'Cthulhu`, 'God')``,
 sending a blank carbon copy to God. It would also be possible to name arguments in
 another order, like in ``send('Hello again', 'World', bcc='God', cc='Cthulhu')``.
 Those two possibilities are better avoided without any strong reason to not
 follow the syntax that is the closest to the function definition: ``send('Hello',
 'World', cc='Cthulhu', bcc='God')``.
 
-As a side note, following `YAGNI <http://en.wikipedia.org/wiki/You_ain't_gonna_need_it>`_
-principle, it is often harder to remove an optional argument (and its logic inside the
-function) that was added "just in case" and is seemingly never used, than to add a
-new optional argument and its logic when needed.
+As a side note, following YAGNI_ principle, it is often harder to remove an
+optional argument (and its logic inside the function) that was added "just in
+case" and is seemingly never used, than to add a new optional argument and its
+logic when needed.
 
 The **arbitrary argument list** is the third way to pass arguments to a
 function.  If the function intention is better expressed by a signature with an
@@ -320,7 +320,7 @@ Instead, use a list comprehension:
 
 .. code-block:: python
 
-    four_lists = [[] for __ in xrange(4)]
+    four_lists = [[] for _ in xrange(4)]
 
 
 A common idiom for creating strings is to use `join <http://docs.python.org/library/string.html#string.join>`_ on an empty string.::
@@ -350,7 +350,9 @@ For more information see this `StackOverflow <http://stackoverflow.com/questions
 Zen of Python
 -------------
 
-Also known as PEP 20, the guiding principles for Python's design.
+.. Also known as PEP 20, the guiding principles for Python's design.
+
+PEP 20としても知られているPythonのデザイン原理のガイドです。
 
 ::
 
@@ -385,7 +387,9 @@ slides from a Python user group
 PEP 8
 -----
 
-PEP 8 is the de-facto code style guide for Python.
+.. PEP 8 is the de-facto code style guide for Python.
+
+PEP 8は、Pythonのデファクトのコードスタイルガイドです。
 
     `PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_
 
@@ -415,12 +419,12 @@ Then run it on a file or series of files to get a report of any violations.
     optparse.py:544:21: W601 .has_key() is deprecated, use 'in'
 
 Conventions
-----------------
+:::::::::::
 
 Here are some conventions you should follow to make your code easier to read.
 
 Check if variable equals a constant
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
 
 You don't need to explicitly compare a value to True, or None, or 0 - you can
 just add it to the if statement. See `Truth Value Testing
@@ -453,11 +457,17 @@ list of what is considered false.
     if attr is None:
         print 'attr is None!'
 
-Access a Dictionary Element
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Access a Dictionary Element
+   ---------------------------
 
-Don't use the ``has_key`` function. Instead use ``x in d`` syntax, or pass
-a default argument to ``get``.
+辞書の要素にアクセスする
+-------------------------------------------
+
+.. Don't use the ``has_key`` function. Instead use ``x in d`` syntax, or pass
+   a default argument to ``get``.
+
+``has_key`` 関数は使わないで下さい。
+代わりに ``x in d`` を使うか、 ``get`` にdefault引数を渡して下さい。
 
 **Bad**:
 
@@ -483,7 +493,7 @@ a default argument to ``get``.
         print d['hello']
 
 Short Ways to Manipulate Lists
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 `List comprehensions
 <http://docs.python.org/tutorial/datastructures.html#list-comprehensions>`_
@@ -546,11 +556,17 @@ The ``enumerate`` function has better readability than handling a counter
 manually. Moreover,
 it is better optimized for iterators.
 
-Read From a File
-~~~~~~~~~~~~~~~~
+.. Read From a File
+   ----------------
 
-Use the ``with open`` syntax to read from files. This will automatically close
-files for you.
+ファイルを読み込む
+--------------------------------
+
+.. Use the ``with open`` syntax to read from files. This will automatically close
+   files for you.
+
+ファイルを読み込むためには ``with open`` という文法を使って下さい。
+これは自動的にファイルを閉じてくれます。
 
 **Bad**:
 
@@ -569,15 +585,20 @@ files for you.
         for line in f:
             print line
 
-The ``with`` statement is better because it will ensure you always close the
-file, even if an exception is raised.
+.. The ``with`` statement is better because it will ensure you always close the
+   file, even if an exception is raised.
+
+``with`` 文は、例外が発生したとしてもファイルが閉じられるのを担保してくれるのでベターです。
 
 Returning Multiple Values from a Function
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------
 
-Python supports returning multiple values from a function as a comma-separated
-list, so you don't have to create an object or dictionary and pack multiple
-values in before you return
+.. Python supports returning multiple values from a function as a comma-separated
+   list, so you don't have to create an object or dictionary and pack multiple
+   values in before you return
+
+Pythonは、カンマで分けられたリストとして関数で複数の値を返すことができます。
+だから、オブジェクトや辞書を作成する必要はなく、返り値に複数の値を含めることができます。
 
 **Bad**:
 

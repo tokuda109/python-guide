@@ -1,8 +1,14 @@
-Learning Python
-===============
+.. Learning Python
+   ===============
 
-Beginner
---------
+Pythonの勉強
+==========================
+
+.. Beginner
+   --------
+
+ビギナー
+----------------
 
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,17 +120,25 @@ development, version control, and optimization/profiling.
 
     `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
 
-The Python Tutorial
-~~~~~~~~~~~~~~~~~~~~
+.. The Python Tutorial
+   ~~~~~~~~~~~~~~~~~~~~
 
-This is the official tutorial, it covers all the basics, and offers a tour of the
-language and the standard library, recommended for those who need a quickstart
-guide to the language.
+Pythonのチュートリアル
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. This is the official tutorial, it covers all the basics, and offers a tour of the
+   language and the standard library, recommended for those who need a quickstart
+   guide to the language.
+
+これは公式のチュートリアルで、全ての基礎をカバーしていたり、言語ツアーの提供や標準ライブラリや言語の必要なガイドの紹介などを提供しています。
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
-References
-----------
+.. References
+   ----------
+
+リファレンス
+--------------------
 
 Python in a Nutshell
 ~~~~~~~~~~~~~~~~~~~~
@@ -133,10 +147,15 @@ Python in a Nutshell, written by Alex Martelli, covers most cross-platform
 python's usage, from its syntax to built-in libraries to advanced topics such
 as writing C extensions.
 
-The Python Language Reference
+.. The Python Language Reference
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python言語のリファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is Python's reference manual, it covers the syntax and the core semantics of the
-language.
+.. This is Python's reference manual, it covers the syntax and the core semantics of the
+   language.
+
+これはPythonのリファレンスマニュアルで、言語のシンタックスやコアとなる文法などをカバーしています。
 
     `The Python Language Reference <http://docs.python.org/reference/index.html>`_

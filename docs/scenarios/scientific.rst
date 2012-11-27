@@ -78,12 +78,17 @@ Enthought
    `Enthought Python distribution <http://enthought.com/>`_ was created. With
    Enthought, scientific python has never been easier (one click to install about
    100 scientific python packages). User beware: Enthought is not free.
+   100 scientific python packages). The Enthought Python Distribution comes in two
+   variants: a free version `EPD Free <http://enthought.com/products/epd_free.php>`_
+   and a paid version with various `pricing options.
+   <http://enthought.com/products/epd_sublevels.php>`_
 
 NumPyとSciPyをインストールする作業は手こずるかもしれません。
 そういった理由から `Enthought Python distribution <http://enthought.com/>`_ が作られました。
 Enthoughtで、科学分野においてPythonを使うことはかつてないほど容易になりました。
 (100くらいの科学分野のPythonパッケージがワンクリックでインストールできます)
-注意点として、Enthoughtは無料ではありません。
+Enthought Python Distributionは無料版の `EPD Free <http://enthought.com/products/epd_free.php>`_ と
+`いくつかの支払オプション <http://enthought.com/products/epd_sublevels.php>`_ がある有償版の2種類が提供されています。
 
 Matplotlib
 ----------

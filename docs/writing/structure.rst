@@ -25,14 +25,17 @@
    a broad sense, what your finished product will look like.
 
 関数をどのモジュールに置けばいいでしょう?
+プロジェクトでどのようにデータを渡していけばいいでしょう?
+どの機能をグループ化して組織化することができるでしょう?
+このような問題の答えを出すことによって、広い意味で計画し、製品を作り終えることができるでしょう。
 
+.. In this section we take a closer look at Python's module and import
+   systems as they are the central element to enforcing structure in your
+   project. We then discuss various perspectives on how to build code which
+   can be extended and tested reliably.
 
-In this section we take a closer look at Python's module and import
-systems as they are the central element to enforcing structure in your
-project. We then discuss various perspectives on how to build code which
-can be extended and tested reliably.
-
-この章では、
+この章では、それらがプロジェクトで構造を強制する中心的な要因であるPythonのモジュールとインポートを詳しく見てみましょう。
+次に、拡張やテストができるコードを作成する方法について、様々な視点でディスカッションします。
 
 
 .. Structure is Key
@@ -48,9 +51,17 @@ importing model is easy to grasp. Therefore, you are left with the
 pure architectural task of crafting the different parts of your
 project and their interactions.
 
+ありがたいことに、インポートやモジュールはPythonで処理されるので、Pythonのプロジェクトを構築することは比較的簡単です。
+ここでは簡単に
+簡単に、ここで、あなたは多くの制約を持って、モデルをインポートするモジュールは把握することが容易であることないことを意味します。
+その上、
+
 Easy structuring of a project means it is also easy
 to do it poorly. Some signs of a poorly structured project
 include:
+
+プロジェクトの構造を簡潔にすることは
+
 
 - Multiple and messy circular dependencies: if your classes
   Table and Chair in furn.py need to import Carpenter from workers.py
@@ -88,6 +99,16 @@ include:
   proper structure. If you never can remember if you have to use
   FurnitureTable, AssetTable or Table, or even TableNew for your
   task at hand, you might be swimming in ravioli code.
+
+- Multiple and messy circular dependencies: if your classes
+  Table and Chair in furn.py need to import Carpenter from workers.py
+  to answer a question such as table.isdoneby(),
+  and if conversely the class Carpenter needs to import Table and Chair,
+  to answer the question carpenter.whatdo(), then you
+  have a circular dependency. In this case you will have to resort to
+  fragile hacks such as using import statements inside
+  methods or functions.
+  複数で汚い依存関係: furn.pyのテーブルとイス
 
 
 .. Modules
@@ -313,12 +334,17 @@ relatively long life of their own in the computer's memory.
 デコレーター
 --------------------
 
-The Python language provides a simple yet powerful syntax called 'decorators'.
-A decorator is a function or a class that wraps (or decorate) a function
-or a method. The 'decorated' function or method will replace the original
-'undecorated' function or method. Because functions are first-class objects
-in Python, it can be done 'manually', but using the @decorator syntax is
-clearer and thus preferred.
+.. The Python language provides a simple yet powerful syntax called 'decorators'.
+   A decorator is a function or a class that wraps (or decorate) a function
+   or a method. The 'decorated' function or method will replace the original
+   'undecorated' function or method. Because functions are first-class objects
+   in Python, it can be done 'manually', but using the @decorator syntax is
+   clearer and thus preferred.
+
+Python言語では、「デコレーター」と呼ばれているシンプルだが強力な構文が提供されています。
+デコレーターは、関数やメソッドをラップ(デコレート)する関数、もしくはクラスです。
+デコレートされた関数やメソッドはオリジナルのデコレートされていない関数やメソッドを置き換えます。
+関数はPythonでは第一級オブジェクトなので、手動でもできるが、@decorator構文を使うことで簡潔で読みやすくなります。
 
 .. code-block:: python
 
